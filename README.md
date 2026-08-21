@@ -1,44 +1,65 @@
 # Netflix Global Analytics Dashboard
 
-Proyecto de análisis de datos y visualización desarrollado en Power BI utilizando datos oficiales del Top 10 semanal de Netflix.
+Proyecto de análisis y visualización orientado a estudiar el consumo global de contenido de Netflix mediante sus rankings semanales y datos financieros.
 
-El objetivo fue analizar tendencias globales de consumo, engagement y evolución temporal del contenido, construyendo KPIs e insights orientados al negocio.
+## Objetivo de negocio
 
-## Tools & Technologies
+Construir una vista ejecutiva que permita analizar:
 
-- Power BI
-- DAX
-- SQL
-- Excel
-- Data Modeling
-- KPI Analysis
+- Evolución semanal del consumo.
+- Contenidos con mayor permanencia en el Top 10.
+- Diferencias entre películas, series y mercados.
+- Relación exploratoria entre horas vistas, suscriptores e ingresos.
+- Contenidos con desempeño sostenido mediante un `Longevity Score`.
 
-## Business Questions
+## Tecnologías
 
-- ¿Qué categorías generan más engagement?
-- ¿Cómo evolucionó el consumo a lo largo del tiempo?
-- ¿Qué shows tuvieron mayor permanencia en el Top 10?
-- ¿Existen diferencias entre países y mercados?
-- ¿Cómo se relacionan horas vistas y suscriptores?
+`Power BI` · `DAX` · `SQL` · `Excel` · `Data Modeling` · `KPI Design`
 
-## Main KPIs
+## KPIs
 
-- Global Hours Viewed
-- Longevity Score
-- Average Hours per Subscriber
-- Revenue by Quarter
-- Weekly Growth Trends
+- Global Hours Viewed.
+- Longevity Score.
+- Average Hours per Subscriber.
+- Revenue by Quarter.
+- Weekly Growth.
 
-## Dashboard Preview
+## Hallazgos
 
-<img width="1500" height="847" alt="Netflix 1" src="https://github.com/user-attachments/assets/2628ae0d-8b9c-4df2-9bdb-66c9ca308a81" />
-<img width="1510" height="853" alt="Netflix 2" src="https://github.com/user-attachments/assets/9f550bc9-7be1-4434-b0ff-c722e44535df" />
-<img width="1503" height="852" alt="Netflix 3" src="https://github.com/user-attachments/assets/f75104cb-f071-487b-93ac-b3e363be6640" />
-<img width="1524" height="862" alt="Netflix 4" src="https://github.com/user-attachments/assets/d9e97e3d-0759-4867-b3f6-81372e023191" />
+- Las series mostraron mayor permanencia en los rankings semanales que las películas.
+- El engagement presentó picos asociados con lanzamientos globales.
+- Los patrones de consumo variaron entre mercados.
+- El Longevity Score ayudó a diferenciar popularidad inicial de desempeño sostenido.
 
-## Key Insights
+## Vista previa
 
-- Las series de TV mostraron mayor permanencia en rankings semanales que las películas.
-- El engagement presentó picos asociados a lanzamientos globales específicos.
-- Algunos mercados mostraron patrones de consumo significativamente distintos respecto al promedio global.
-- La métrica de Longevity Score permitió identificar contenido con performance sostenida más allá del volumen inicial de visualizaciones.
+![Dashboard 1](https://github.com/user-attachments/assets/2628ae0d-8b9c-4df2-9bdb-66c9ca308a81)
+
+![Dashboard 2](https://github.com/user-attachments/assets/9f550bc9-7be1-4434-b0ff-c722e44535df)
+
+![Dashboard 3](https://github.com/user-attachments/assets/f75104cb-f071-487b-93ac-b3f6-81372e023191)
+
+## Estado del repositorio
+
+Este repositorio funciona actualmente como una muestra visual y metodológica del proyecto. Algunos archivos binarios publicados son marcadores incompletos y no permiten reconstruir el dashboard.
+
+El archivo `netflix_queries.sql` corresponde a una práctica independiente de modelado dimensional con datos sintéticos de ventas y **no fue la fuente del dashboard de Netflix**. Se conserva temporalmente como evidencia de práctica en SQL, pero será separado en otro repositorio.
+
+Para completar la reproducción del proyecto falta publicar:
+
+- El archivo `.pbix` válido.
+- El dataset de países completo.
+- Las medidas DAX utilizadas.
+- Un diccionario de datos y las fuentes exactas.
+
+Esta aclaración evita atribuir al dashboard archivos que no participaron en su construcción.
+
+## Limitaciones
+
+- Las métricas agregadas no permiten inferir comportamiento individual.
+- Comparar consumo con variables financieras requiere considerar diferencias de periodicidad.
+- Los rankings Top 10 representan popularidad relativa, no todo el catálogo.
+
+## Autora
+
+**Sofía González Semper** — Data Analytics, operaciones y mejora de procesos.
